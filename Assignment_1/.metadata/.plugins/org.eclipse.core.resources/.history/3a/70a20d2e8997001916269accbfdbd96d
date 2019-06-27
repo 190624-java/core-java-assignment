@@ -1,0 +1,57 @@
+package assignment_1;
+
+public class Assignment_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Variables used in the questions
+		int[] arr = {1,0,5,6,3,2,3,7,9,8,4}; //Q1
+		String cat = "cat"; //Q3
+		int N = 6; //Q4
+		String str = "Revature";//Q5
+		int idx = 5;//Q5
+		int a = 8;//Q6
+		
+		
+		//Q1
+		Bubble_Sort sort = new Bubble_Sort();
+		sort.sort(arr);
+		sort.printIntArray(arr);
+		
+		//Q2
+		Fib fib = new Fib();
+		fib.printFib();
+		
+		//Q3
+		System.out.print(cat + " ");
+		Rev_String rev = new Rev_String();
+		cat = rev.revString(cat);
+		System.out.println(cat);
+		
+		//Q4
+		Factorial math = new Factorial();
+		System.out.println(math.factorial(N));
+		
+		//Q5
+		Sub_String section = new Sub_String();
+		str = section.sub(str, idx);
+		System.out.println(str);
+		
+		//Q6
+		Even evenodd = new Even();
+		if(evenodd.check(a)) {
+			System.out.println("its even");
+		}else {
+			System.out.println("its odd");
+		}
+		
+		//Q7
+		
+		
+	}
+
+}
+
+//Q1 Bubble sort 1,0,5,6,3,2,3,7,9,8,4
+

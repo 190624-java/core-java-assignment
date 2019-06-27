@@ -1,0 +1,32 @@
+package assignment_1;
+
+public class Assignment_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Q1
+		int[] arr = {1,0,5,6,3,2,3,7,9,8,4};
+		Bubble_Sort sort = new Bubble_Sort();
+		sort.sort(arr);
+		sort.printIntArray(arr);
+		
+		//Q2
+		Fib fib = new Fib();
+		fib.printFib();
+		
+		//Q3
+		String cat = "cat";
+		System.out.println(cat);
+		Rev_String rev = new Rev_String();
+		cat = rev.revString(cat);
+		
+		//Q4
+		
+
+	}
+
+}
+
+//Q1 Bubble sort 1,0,5,6,3,2,3,7,9,8,4
+
