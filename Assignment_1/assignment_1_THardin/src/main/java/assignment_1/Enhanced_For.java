@@ -13,10 +13,12 @@ class Enhanced_For {
 	void printEven(int[] hundred) {
 		
 		for(int i: hundred) {
-			if(hundred[i]%2 == 0) {
-				System.out.print(hundred[i] + " ");
+			if(i%2 == 0) {
+				System.out.print(i + " ");
 			}
 		}
+		
+		System.out.println();
 		
 	}
 

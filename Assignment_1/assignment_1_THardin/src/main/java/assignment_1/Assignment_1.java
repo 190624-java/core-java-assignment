@@ -23,7 +23,7 @@ public class Assignment_1 {
 		float a = 4.25f;//Q10
 		float b = 10f;//Q10 
 		float c;//Q10
-		int[] hundred = new int[100];
+		int[] hundred = new int[100];//Q12
 		
 		
 		
@@ -99,6 +99,12 @@ public class Assignment_1 {
 		Enhanced_For evens = new Enhanced_For();
 		evens.setHundred(hundred);
 		evens.printEven(hundred);
+		
+		//Q13
+		Triangle printer = new Triangle();
+		printer.print();
+		
+		//Q14
 		
 	}
 
