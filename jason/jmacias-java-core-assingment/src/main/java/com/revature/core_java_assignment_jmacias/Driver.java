@@ -4,6 +4,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Scanner;
+
 import com.revature.q11.Q11;
 
 public class Driver {
@@ -193,6 +195,26 @@ public class Driver {
 		// calling function with first argument (commented out so this can run
 		// without using the command line
 //		System.out.println(Q16.countString(argsStr));
+		System.out.println("");
+		
+		
+		// Q17 - Write a program that calculates the simple interest on the
+		// principal, rate of interest and number of years provided by the 
+		// user. Enter principal, rate and time through the console using the
+		// Scanner class.
+		System.out.println("Q17 calculation of simple interest: ");
+		// Setting up scanner, prompting for input, storing in variables
+		Scanner scn = new Scanner(System.in);
+		System.out.println("What is the principal?");
+		double principal = scn.nextDouble();
+		System.out.println("What is the interest rate? (enter in decimal format)");
+		double interestRate = scn.nextDouble();
+		System.out.println("How many years has it been collecting interest?");
+		double years = scn.nextDouble();
+		// passing into function
+		System.out.print("Interest generated is:   ");
+		System.out.println(Q17.calculateInterest(principal, interestRate, years));
+		System.out.println("");
 		
 	}
 
