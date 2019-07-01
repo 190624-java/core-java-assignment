@@ -215,6 +215,14 @@ public class Driver {
 		System.out.print("Interest generated is:   ");
 		System.out.println(Q17.calculateInterest(principal, interestRate, years));
 		System.out.println("");
+		scn.close();
+		
+		
+		//Q18 - 
+		Q18 obj18 = new Q18();
+		System.out.println(obj18.checkUpper("Hello"));
+		System.out.println(obj18.convertLower("AbCdEfG"));
+		obj18.intAdd("25");
 		
 	}
 
