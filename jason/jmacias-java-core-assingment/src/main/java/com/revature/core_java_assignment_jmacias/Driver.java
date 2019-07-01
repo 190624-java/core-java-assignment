@@ -218,11 +218,36 @@ public class Driver {
 		scn.close();
 		
 		
-		//Q18 - 
+		// Q18 - Write a program having a concrete ;subclass that inherits 
+		// three abstract methods from a superclass. Provide the following 
+		// three implementations in the subclass corresponding to the abstract
+		// methods in the superclass: 
+		// 1. Check for uppercase characters in a string, and return ‘true’ or
+		// ‘false’ depending if any are found. 
+		// 2. Convert all of the lower case characters to uppercase in the
+		// input string, and return the result.
+		// 3. Convert the input string to integer and add 10, output the
+		// result to the console. Create an appropriate class having a main
+		// method to test the above setup.
 		Q18 obj18 = new Q18();
+		System.out.println("Q18 three method results: ");
 		System.out.println(obj18.checkUpper("Hello"));
 		System.out.println(obj18.convertLower("AbCdEfG"));
 		obj18.intAdd("25");
+		System.out.println("");
+		
+		
+		// Q19 - Create an ArrayList and insert integers 1 through 10. Display
+		// the ArrayList. Add all the even numbers up and display the result.
+		// Add all the odd numbers up and display the result. Remove the prime
+		// numbers from the ArrayList and print out the remaining ArrayList.
+		
+		System.out.println("Q19 added odds and removed primes:");
+		Q19.addOddsRemovePrimes();
+		System.out.println("");
+		
+		
+		// Q20 - 
 		
 	}
 
