@@ -1,5 +1,6 @@
 package com.revature.core_java_assignment_jmacias;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -7,7 +8,7 @@ import com.revature.q11.Q11;
 
 public class Driver {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// Q1 - bubble sort
 		int[] bSortArray = {1,0,5,6,3,2,3,7,9,8,4};
 		System.out.println("Q1 sorted array: ");
@@ -174,7 +175,24 @@ public class Driver {
 		
 		// See Q15Test class for calling code
 		
+		// Q16 - Write a program to display the number of characters for a 
+		// string input. The string should be entered as a command line 
+		// argument using (String [ ] args).
 		
+		// setting up str variable to take input and argStr variable to take
+		// in the first argument
+		InputStreamReader iReader = new InputStreamReader(System.in);
+		BufferedReader bReader = new BufferedReader(iReader);
+		String str3 = bReader.readLine();
+		// commented out so this can run without command line
+//		String argsStr = args[0];
+		
+		System.out.println("Q16 String's length:");
+		// calling function with user input
+		System.out.println(Q16.countString(str3));
+		// calling function with first argument (commented out so this can run
+		// without using the command line
+//		System.out.println(Q16.countString(argsStr));
 		
 	}
 
