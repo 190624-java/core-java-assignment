@@ -249,6 +249,8 @@ public class Driver {
 		
 		// Q20 - 
 		
+		Q20.readData();
+		
 	}
 
 }
