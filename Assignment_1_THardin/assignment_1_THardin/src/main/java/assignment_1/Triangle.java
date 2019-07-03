@@ -1,6 +1,6 @@
 package assignment_1;
 
-class Triangle {
+public class Triangle {
 	
 	void print() {
 		for(int i = 0; i < 4; i++) {

@@ -1,6 +1,6 @@
 package assignment_1;
 
-class Enhanced_For {
+public class Enhanced_For {
 	
 	void setHundred(int[] hundred){
 		for(int i = 1; i <= hundred.length; i++) {

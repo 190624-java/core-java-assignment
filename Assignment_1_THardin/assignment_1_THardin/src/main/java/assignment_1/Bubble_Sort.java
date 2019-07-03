@@ -1,6 +1,6 @@
 package assignment_1;
 
-class Bubble_Sort {
+public class Bubble_Sort {
 	//Q1 Bubble sort 1,0,5,6,3,2,3,7,9,8,4
 	
 	//sorts the array which will be passed in

@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/Users/TreHhardin/Desktop/Revature/Code/Repositories/Examples"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -46,9 +47,11 @@
 			<item value="com.revature"/>
 		</list>
 		<list key="name">
+			<item value="maven"/>
 			<item value="assignment_1"/>
 		</list>
 		<list key="artifactId">
+			<item value="maven"/>
 			<item value="assignment_1"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -62,5 +65,9 @@
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>

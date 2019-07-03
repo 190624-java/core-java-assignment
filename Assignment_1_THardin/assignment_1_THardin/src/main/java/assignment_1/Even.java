@@ -1,6 +1,6 @@
 package assignment_1;
 
-class Even {
+public class Even {
 	
 	boolean check(int a) {
 		boolean bool = false;

@@ -1,6 +1,6 @@
 package assignment_1;
 
-class Factorial {
+public class Factorial {
 
 	int factorial (int n) {
 		int fact = 1;

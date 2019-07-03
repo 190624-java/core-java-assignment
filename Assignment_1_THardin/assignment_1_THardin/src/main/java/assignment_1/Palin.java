@@ -1,7 +1,7 @@
 package assignment_1;
 import java.util.ArrayList;
 
-class Palin {
+public class Palin {
 	
 	void palindrone (ArrayList<String> palins, ArrayList<String> names) {
 		

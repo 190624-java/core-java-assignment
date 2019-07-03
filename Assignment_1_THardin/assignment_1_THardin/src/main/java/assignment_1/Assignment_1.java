@@ -1,11 +1,14 @@
 package assignment_1;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Assignment_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		Scanner scanner = new Scanner(System.in);
 		
 		//Variables used in the questions
 		int[] arr = {1,0,5,6,3,2,3,7,9,8,4}; //Q1
@@ -24,6 +27,7 @@ public class Assignment_1 {
 		float b = 10f;//Q10 
 		float c;//Q10
 		int[] hundred = new int[100];//Q12
+		String str2 = "Hello World"; //Q18
 		
 		
 		
@@ -105,8 +109,54 @@ public class Assignment_1 {
 		printer.print();
 		
 		//Q14
+		Switching switchy = new Switching();
+		switchy.runSwitch(scanner);
 		
+		//Q15
+		System.out.println("10*3 = " + new Calculator().multiplication(10, 3));
+		System.out.println("7 + 32 = " + new Calculator().addtion(7, 32));
+		
+		//Q16
+		CmdLineArg.args(args);
+		
+		//Q17
+		InterestCalc.interest(scanner);
+		
+		//Q18
+		WierdStrings wierd = new WierdStrings();
+		System.out.println("String provided: " + str2 );
+		System.out.println("Are there uppercase letters: " + wierd.checkForUpper(str2));
+		str2 = wierd.toLowers(str2);
+		System.out.println("Its now lowercase: " + str2);
+		System.out.println("Now its a number: " + wierd.toInteger(str2));
+		
+		//Q19
+		TenNumbers.listManipulation();
+		
+		//Q20
+		CharacterReader chars = new CharacterReader();
+		chars.read();
+		
+		
+		
+		scanner.close();
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

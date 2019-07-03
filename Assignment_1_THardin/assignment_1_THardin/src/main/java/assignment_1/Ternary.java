@@ -1,6 +1,6 @@
 package assignment_1;
 
-class Ternary {
+public class Ternary {
 	
 	long comp(long a, long b) {
 		

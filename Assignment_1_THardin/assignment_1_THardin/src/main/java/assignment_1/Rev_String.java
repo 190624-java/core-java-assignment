@@ -1,6 +1,6 @@
 package assignment_1;
 
-class Rev_String {
+public class Rev_String {
 	
 	String revString(String rev) {
 		int n = rev.length();

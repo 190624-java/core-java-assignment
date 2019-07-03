@@ -2,7 +2,7 @@ package assignment_1;
 
 import java.util.ArrayList;
 
-class Fib {
+public class Fib {
 
 	void printFib() {
 		ArrayList<Integer> fib = new ArrayList<Integer>();

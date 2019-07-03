@@ -1,0 +1,42 @@
+package assignment_1;
+
+public class WierdStrings extends Strings {
+
+
+	
+	@Override
+	String toLowers(String str) {
+		// TODO Auto-generated method stub
+		String temp = "";
+		for(int i = 0; i < str.length(); i++) {
+			temp += Character.toLowerCase(str.charAt(i));
+		}
+		return temp;
+	}
+	
+
+	@Override
+	boolean checkForUpper(String str) {
+		// TODO Auto-generated method stub
+		for(int i = 0; i < str.length(); i++) {
+			if(Character.isUpperCase(str.charAt(i)))
+				return true;
+		}
+		
+		return false;
+	}
+
+
+	@Override
+	int toInteger(String str) {
+		// TODO Auto-generated method stub
+		int total = 0;
+		
+		for(int i = 0; i < str.length(); i++) {
+			total += Character.getNumericValue(str.charAt(i));
+		}
+		
+		return total;
+	}
+
+}

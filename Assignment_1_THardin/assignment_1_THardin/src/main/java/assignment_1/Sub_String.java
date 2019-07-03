@@ -1,6 +1,6 @@
 package assignment_1;
 
-class Sub_String {
+public class Sub_String {
 	
 	String sub(String str, int idx) {
 		

@@ -2,7 +2,7 @@ package assignment_1;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-class Prime {
+public class Prime {
 	
 	void primecalc(int[] numbs, ArrayList<Integer> primes) {
 		

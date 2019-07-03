@@ -2,7 +2,7 @@ package assignment_1;
 
 import assignment_1_1.SecondPackage;
 
-class Access {
+public class Access {
 	
 	float a1 = SecondPackage.a;
 	
