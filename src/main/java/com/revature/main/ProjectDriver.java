@@ -3,68 +3,73 @@ package com.revature.main;
 import java.util.Scanner;
 
 import com.revature.main.access2.Accessor;
-import com.revature.utilities.GetLooper;
-import com.revature.utilities.GetStringLooper;
-import com.revature.utilities.IOHelper;
+import com.revature.utils.IOHelper;
 
+//Project0 Part 1 - Due Wed. July, 3rd, 2019 at 9am.
 public class ProjectDriver {
+	//Test Controller - allows/disallows all answers at once.
+	public static boolean doQ = false;
+	
 	private static Scanner scanner;
 	private static IOHelper io;
-
+	
+	
 	public static void main(String[] args) {
-		 scanner = new Scanner(System.in);
-		 io = new IOHelper();
-		 
-		for(int i =0; i<args.length; i++) {
-			System.out.println("Argument '" + i + "' is: " + args[i]);
-		}
-		//Project0 Part 1 - Due Wed. July, 3rd, 2019 at 9am.
+		scanner = new Scanner(System.in);
+		io = new IOHelper();
 		
-		
+		if(doQ) {
 //		Q1. Perform a bubble sort on the following integer array:  1,0,5,6,3,2,3,7,9,8,4
-
-		/*
+		
+		
 		System.out.println("Q1 - doing Bubble Sort on Assignment Array");
 		Bubbler bubbler = new Bubbler();
 		//int[] a = bubbler.doDefaultSort();
 		//bubbler.equals(a,)
-		*/
+		}
 		
+		if(doQ) {
 //		Q2. Write a program to display the first 25 Fibonacci numbers beginning at 0.
-
+		
+			
 		//TODO make it recursive 
 		//TODO make unit test
-//		System.out.println("Q2 - Showing first 25 numbers of fibonacci sequence");
-//		Fibi fibi = new Fibi();
-//		fibi.show25();
-//		System.out.println("\n");
+		System.out.println("Q2 - Showing first 25 numbers of fibonacci sequence");
+		Fibi fibi = new Fibi();
+		fibi.show25();
+		System.out.println("\n");
+		}
 		
+		if(doQ) {
 //		Q3. Reverse a string without using a temporary variable.  
 		//Do NOT use reverse() in the StringBuffer or the StringBuilder APIs.
 		
-//		System.out.println("Q3 - Reverse a string");
-//		StringReverser sr = new StringReverser();
-//		System.out.println("The reverse of Revature is: "+ sr.reverse("Revature"));
-//		System.out.println("\n");
-
+		
+		System.out.println("Q3 - Reverse a string");
+		StringReverser sr = new StringReverser();
+		System.out.println("The reverse of Revature is: "+ sr.reverse("Revature"));
+		System.out.println("\n");
+		
+		}
+		
+		
+		if(doQ) {
 //		Q4. Write a program to compute N factorial.
 		
-//		NFactorial nFactorial = new NFactorial();
-//		Scanner factorialScanner = new Scanner(System.in);
-//		System.out.println("Q4 - Computing N Factorial");
-//		System.out.print("Enter a number for n-factorial computation: ");
-//		int factorialInput = Integer.valueOf(factorialScanner.next());
-//		System.out.println("N Factorial of \""+factorialInput+"\" is: "+ 
-//		nFactorial.doFactorial(factorialInput));		
-//		
-//		System.out.println("\n");
+		NFactorial nFactorial = new NFactorial();
+		Scanner factorialScanner = new Scanner(System.in);
+		System.out.println("Q4 - Computing N Factorial");
+		System.out.print("Enter a number for n-factorial computation: ");
+		int factorialInput = Integer.valueOf(factorialScanner.next());
+		System.out.println("N Factorial of \""+factorialInput+"\" is: "+ 
+		nFactorial.doFactorial(factorialInput));		
+		
+		System.out.println("\n");
+		
+		}
 		
 		
-		
-		
-		
-		
-		
+		if(doQ) {
 //		Q5. Write a substring method that accepts a string str and an integer idx and returns 
 		//the substring contained between 0 and idx-1 inclusive.  Do NOT use any of the existing 
 		//substring methods in the String, StringBuilder, or StringBuffer APIs.
@@ -82,12 +87,9 @@ public class ProjectDriver {
 		
 		System.out.println("\n");
 		
-		
-		
-		
-		
-		
-		
+		}
+	
+		if(doQ) {
 //		Q6. Write a program to determine if an integer is even without using the modulus 
 		//operator (%)
 		
@@ -99,46 +101,44 @@ public class ProjectDriver {
 //		}		
 //		
 //		System.out.println("\n");
+		}
 		
-		
-		
-		
+		if(doQ) {
 		//Q7. Sort two employees based on their name, department, and age using the Comparator 
 		//interface.
+		//TODO finish
 		
-//		System.out.println("Q7: Sorting 2 employee's by: name, department, and age");
-//		Employee e1 = new Employee();
-//		Employee e2 = new Employee();
-//		
-//		boolean c1 = true;
-//		do{
-//			System.out.println("Enter employee's department: ");
-//			
-//			c1 = io.getContinueReply(scanner);
-//		}while (c1==true) {
-//			
-//		}
-//		GetStringLooper employeeGetter = new GetStringLooper("Enter employee's name: ", "");
-//		e1.setName(employeeGetter.getAndReturn());
-//		employeeGetter.changeInstruction("Enter employee's department: ","");
-//		employeeGetter.getAndReturn();
-//		
-//		
-//		System.out.println("\n");
-//		
+			
+		System.out.println("Q7: Sorting 2 employee's by: name, department, and age");
+		Employee e1 = new Employee();
+		Employee e2 = new Employee();
+		
+		boolean c1 = true;
+		do{
+			System.out.println("Enter employee's department: ");
+			
+			c1 = io.getContinueReply(scanner);
+		}while (c1);
 		
 		
+		System.out.println("\n");
 		
+		}//end Q
+		
+		if(doQ) {
 		//Q8. Write a program that stores the following strings in an ArrayList and saves all the 
 		//palindromes in another ArrayList.
 //		“karan”, “madam”, ”tom”, “civic”, “radar”, “jimmy”, “kayak”, “john”,  “refer”, “billy”, 
 		//“did”
 
 		
-//		Palindromer pal = new Palindromer();
-//		
-//		System.out.println("\n");		
+		Palindromer pal = new Palindromer();
 		
+		System.out.println("\n");		
+		
+		}//end Q
+		
+		if(doQ) {
 //		Q9. Create an ArrayList which stores numbers from 1 to 100 and prints out all the prime 
 		//numbers to the console.
 		
@@ -148,14 +148,14 @@ public class ProjectDriver {
 		System.out.println("\n");
 		
 		
-		
+		}
 		
 //		==================================================================
 		
 		
 		
 		
-		
+		if(doQ) {
 //		Q10. Find the minimum of two numbers using ternary operators.
 		
 		TernaryMinFinder tmf = new TernaryMinFinder();
@@ -173,17 +173,23 @@ public class ProjectDriver {
 		
 		EnhancedFor ef = new EnhancedFor();
 		
+		}
+		
+		if(doQ) {
 //		Q13. Display the triangle on the console as follows using any type of loop.  Do NOT use a 
 		//simple group of print statements to accomplish this.  
 //			0 
 //			1 0
 //			1 0 1
 //			0 1 0 1
+		
 		BinaryTriangle bt = new BinaryTriangle();
 		
 		System.out.println("\n");
 		
+		}
 		
+		if(doQ) {
 //		Q14. 
 //		Write a program that demonstrates the switch case. Implement the following 
 		//functionalities in the cases:java
@@ -195,20 +201,42 @@ public class ProjectDriver {
 		Cases cases = new Cases();
 		
 		System.out.println("\n");
+		
+		}
+		
+		if(doQ) {
 //		Q15. Write a program that defines an interface having the following methods: 
 		//addition, subtraction, multiplication, and division. Create a class that implements 
 		//this interface and provides appropriate functionality to carry out the required 
 		//operations. Hard code two operands in a test class having a main method that calls 
 		//the implementing class.
+			
+			
 		System.out.println("\n");
+		
+		}
+		
+		if(doQ) {
 //		Q16. Write a program to display the number of characters for a string input. The 
 		//string should be entered as a command line argument using (String [ ] args).
+		
+			
 		System.out.println("\n");
+		
+		}
+		
+		if(doQ) {
 //		Q17. Write a program that calculates the simple interest on the principal, rate of 
 		//interest and number of years provided by the user. Enter principal, rate and 
 		//time through the console using the Scanner class.
 //		Interest = Principal* Rate* Time
+		
+			
 		System.out.println("\n");
+		
+		}
+		
+		if(doQ) {
 //		Q18. Write a program having a concrete ;subclass that inherits three abstract 
 		//methods from a superclass.  Provide the following three implementations in the 
 		//subclass corresponding to the abstract methods in the superclass:
@@ -220,12 +248,29 @@ public class ProjectDriver {
 //		3.          	Convert the input string to integer and add 10, output the result 
 		//to the console.
 //		Create an appropriate class having a main method to test the above setup.
+		
+			
+			
+		
+		
 		System.out.println("\n");
+		
+		}
+		
+		if(doQ) {
 //		Q19. Create an ArrayList and insert integers 1 through 10. Display the ArrayList. 
 		//Add all the even numbers up and display the result. Add all the odd numbers up 
 		//and display the result. Remove the prime numbers from the ArrayList and print out 
 		//the remaining ArrayList.
+		
+		
+			
+		
 		System.out.println("\n");
+			
+		}
+		
+		if(doQ) {
 //		Q20. Create a notepad file called Data.txt and enter the following:
 //		Mickey:Mouse:35:Arizona
 //		Hulk:Hogan:50:Virginia
@@ -238,10 +283,18 @@ public class ProjectDriver {
 //		Name: Mickey Mouse
 //		Age: 35 years
 //		State: Arizona State
-
 		
-	}
+			
+			
+		}//end if
+		
+	}//end main()
 	
+	public static void printArgs(String[] args) {
+		for(int i =0; i<args.length; i++) {
+			System.out.println("Argument '" + i + "' is: " + args[i]);
+		}	
+	}
 
 
 }
