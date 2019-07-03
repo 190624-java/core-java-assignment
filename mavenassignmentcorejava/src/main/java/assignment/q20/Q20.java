@@ -12,6 +12,7 @@ public class Q20 {
 	private static BufferedReader br;
 	private static int rowInFile = 0; // number of rows in a file
 	private static String path = "src/main/resources/Data.txt";
+	public static String testStr;
 	
 	public static void caller(int recordNumber) {
 		loadFile();
@@ -45,8 +46,14 @@ public class Q20 {
 	
 	public static void getFileInformation(int recordNumber) {
 		String[] text = records.get(recordNumber).split(":");
+		testStr = text[0];
 		System.out.println("Name: " + text[0] + " " + text[1]);
 		System.out.println("Age: " + text[2] + " years");
 		System.out.println("State: " + text[3]);
+	}
+	
+	public static String testQ20() {
+		caller(0);
+		return testStr;
 	}
 }

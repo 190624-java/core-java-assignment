@@ -2,12 +2,11 @@ package assignment;
 
 public class Q11 {
 	
-	public static void AccessFloats() {
-		// should print 1.9
-		System.out.println(q11_otherpackage.OtherClass.numFloat1);
-		
-		// should print 7.71
-		System.out.println(q11_otherpackage.OtherClass.numFloat2);
-
+	public static float[] AccessFloats() {
+		// should get 1.9
+		float[] fs = new float[2];
+		fs[0] = q11_otherpackage.OtherClass.NUMFLOAT1; // 1.9
+		fs[1] = q11_otherpackage.OtherClass.NUMFLOAT2; //  7.71
+		return fs;
 	}
 }

@@ -6,6 +6,6 @@ package q11_otherpackage;
  */
 
 public class OtherClass {
-	public static float numFloat1 = 1.9F;
-	public static float numFloat2 = 7.71F;
+	public static final float NUMFLOAT1 = 1.9F;
+	public static final float NUMFLOAT2 = 7.71F;
 }

@@ -25,6 +25,14 @@ public class Main {
 		System.out.println("}");
 	}
 	
+	private void printIntArrayList(ArrayList<Integer> al) {
+		System.out.print("{ ");
+		for(int n : al) {
+			System.out.print(n + " ");
+		}
+		System.out.println("}");
+	}
+	
 	private void printEmployeeList(ArrayList<Employee> al) {
 		for(Employee e : al) {
 			System.out.println("Name: " + e.getName());
@@ -57,10 +65,10 @@ public class Main {
 		System.out.println(result); // shoudl print "Hyper"
 		
 		System.out.println("\n---------------- Q6 ---------------- ");
-		Q6.isEven(8); //even
-		Q6.isEven(17); // odd
-		Q6.isEven(0); // even
-		Q6.isEven(-2); // even
+		System.out.println(Q6.isEven(8)); //true
+		System.out.println(Q6.isEven(17)); // false
+		System.out.println(Q6.isEven(0)); // true
+		System.out.println(Q6.isEven(-2)); // true
 		
 		System.out.println("\n---------------- Q7 ---------------- ");
 		ArrayList<Employee> employees = new ArrayList<Employee>(); // make employee test list
@@ -92,14 +100,17 @@ public class Main {
 		printArrayList(pal);
 		
 		System.out.println("\n---------------- Q9 ---------------- ");
-		Q9.printPrimes();
+		ArrayList<Integer> primes = Q9.Primes();
+		printIntArrayList(primes);
 		
 		System.out.println("\n---------------- Q10 ---------------- ");
 		System.out.println(Q10.min(1.7, 1.9)); // 1.7 is minimum
 		System.out.println(Q10.min(-13, -17)); // -17 is minimum
 		
 		System.out.println("\n---------------- Q11 ---------------- ");
-		Q11.AccessFloats(); // prints 2 floats in another package
+		float[] fs = Q11.AccessFloats(); // prints 2 floats in another package
+		System.out.println(fs[0]);
+		System.out.println(fs[1]);
 		
 		System.out.println("\n---------------- Q12 ---------------- ");
 		Q12.printEvens(); // constructor calls printEvens() method

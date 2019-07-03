@@ -3,7 +3,7 @@ package assignment;
 import java.util.Scanner;
 
 public class Q17 {
-
+	
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
@@ -16,8 +16,8 @@ public class Q17 {
 		
 		System.out.print("Enter time: ");
 		double time = sc.nextDouble();
-		
-		System.out.println("The simple interest = " + principal * rate * time);
+		double result = principal * rate * time;
+		System.out.println("The simple interest = " + result);
 		sc.close();
 	}
 }

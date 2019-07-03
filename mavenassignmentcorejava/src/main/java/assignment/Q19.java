@@ -59,4 +59,12 @@ public class Q19 {
 			}
 			System.out.println("}");
 	}
+	
+	public static ArrayList<Integer> testNums() {		
+		init();
+		addEvens();
+		addOdds();
+		removePrimes(); // take out all primes
+		return nums; 
+	}
 }

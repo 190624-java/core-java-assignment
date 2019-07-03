@@ -1,9 +1,12 @@
 package assignment;
 
+import java.util.ArrayList;
+
 public class Q13 {
 
 	private static int counter = 0;
 	private static String nums = "";
+	public static ArrayList<String> output = new ArrayList<String>(); // used for unit testing
 
 	public static void printSeq() {		
 		while(counter < 4) {
@@ -18,6 +21,7 @@ public class Q13 {
 				else nums = "1" + nums;
 			}
 			System.out.println(nums);
+			output.add(nums);
 			counter++;
 		}
 	}
