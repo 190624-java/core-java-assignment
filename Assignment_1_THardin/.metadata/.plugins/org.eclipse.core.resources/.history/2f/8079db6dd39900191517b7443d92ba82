@@ -1,0 +1,10 @@
+package assignment_1;
+
+public interface CalculatorOps {
+	
+	double addtion();
+	double subtraction();
+	double multiplication();
+	double division();
+
+}

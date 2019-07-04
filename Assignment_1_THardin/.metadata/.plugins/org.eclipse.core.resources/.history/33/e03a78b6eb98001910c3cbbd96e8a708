@@ -1,0 +1,23 @@
+package assignment_1;
+
+class Enhanced_For {
+	
+	void setHundred(int[] hundred){
+		for(int i = 0; i < hundred.length; i++) {
+			
+			hundred[i] = i;
+			
+		}
+	}
+	
+	void printEven(int[] hundred) {
+		
+		for(int i: hundred) {
+			if(hundred[i]%2 == 0) {
+				System.out.print(hundred[i] + " ");
+			}
+		}
+		
+	}
+
+}
